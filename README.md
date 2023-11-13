@@ -1,6 +1,10 @@
 ## Overview
 SqliteToGraph is a Python utility for converting Sqlite database schemas into graphs. This tool allows for the extraction of schema information from a Sqlite database, constructs a graph representation of the schema, and finds paths between tables based on foreign key relationships.
 
+Example based on the sample_database.db schema.
+
+![](test_graph.png)
+
 ## Features
 - **Schema Extraction**: Retrieves schema details from a Sqlite database, including tables, columns, and foreign keys.
 - **Graph Construction**: Builds a directed graph where nodes are database tables and edges denote foreign key relationships.
