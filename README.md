@@ -10,7 +10,7 @@ SqliteToGraph is a Python utility for converting Sqlite database schemas into gr
 Clone the repository and install the necessary dependencies:
 
 ```bash
-git clone [repository URL]
+git clone https://github.com/BlaiseLabs/SqliteToGraph.git
 cd SqliteToGraph
 pip install -r requirements.txt
 ```
