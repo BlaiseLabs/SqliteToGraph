@@ -1,10 +1,8 @@
-# SQLiteToGraph Codebase README
-
 ## Overview
-SQLiteToGraph is a Python utility for converting SQLite database schemas into graphs. This tool allows for the extraction of schema information from a SQLite database, constructs a graph representation of the schema, and finds paths between tables based on foreign key relationships.
+SqliteToGraph is a Python utility for converting Sqlite database schemas into graphs. This tool allows for the extraction of schema information from a Sqlite database, constructs a graph representation of the schema, and finds paths between tables based on foreign key relationships.
 
 ## Features
-- **Schema Extraction**: Retrieves schema details from a SQLite database, including tables, columns, and foreign keys.
+- **Schema Extraction**: Retrieves schema details from a Sqlite database, including tables, columns, and foreign keys.
 - **Graph Construction**: Builds a directed graph where nodes are database tables and edges denote foreign key relationships.
 - **Path Finding**: Identifies all possible paths between two tables in the database schema based on specified foreign key properties.
 
@@ -12,18 +10,18 @@ SQLiteToGraph is a Python utility for converting SQLite database schemas into gr
 Clone the repository and install the necessary dependencies:
 
 ```bash
-git clone https://github.com/BlaiseLabs/SqliteToGraph
-cd SQLiteToGraph
+git clone [repository URL]
+cd SqliteToGraph
 pip install -r requirements.txt
 ```
 
 ## Usage
-Use the `SQLToGraphConverter` class in `SQLiteToGraph.py` for operations. Here's a basic usage example:
+Use the `SqlToGraphConverter` class in `SqliteToGraph.py` for operations. Here's a basic usage example:
 ```python
-from SQLiteToGraph import SQLToGraphConverter
+from SqliteToGraph import SqlToGraphConverter
 
-# Initialize the converter with your SQLite database path
-converter = SQLToGraphConverter("./sample_database.db")
+# Initialize the converter with your Sqlite database path
+converter = SqlToGraphConverter("./sample_database.db")
 
 # Extract schema information
 schema_info = converter.extract_schema()
