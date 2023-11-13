@@ -1,7 +1,7 @@
 # SQLiteToGraph Codebase README
 
 ## Overview
-SQLiteToGraph is a Python utility for converting SQLite database schemas into directed graphs. This tool allows for the extraction of schema information from a SQLite database, constructs a graph representation of the schema, and finds paths between tables based on foreign key relationships.
+SQLiteToGraph is a Python utility for converting SQLite database schemas into graphs. This tool allows for the extraction of schema information from a SQLite database, constructs a graph representation of the schema, and finds paths between tables based on foreign key relationships.
 
 ## Features
 - **Schema Extraction**: Retrieves schema details from a SQLite database, including tables, columns, and foreign keys.
@@ -23,7 +23,7 @@ Use the `SQLToGraphConverter` class in `SQLiteToGraph.py` for operations. Here's
 from SQLiteToGraph import SQLToGraphConverter
 
 # Initialize the converter with your SQLite database path
-converter = SQLToGraphConverter("path/to/database.db")
+converter = SQLToGraphConverter("./sample_database.db")
 
 # Extract schema information
 schema_info = converter.extract_schema()
@@ -32,7 +32,7 @@ schema_info = converter.extract_schema()
 graph = converter.construct_graph(schema_info)
 
 # Find paths between tables based on foreign keys
-paths = converter.find_paths(graph, "foreign_key1", "foreign_key2")
+paths = converter.find_paths(graph, "product_id", "user_id")
 ```
 
 ## Running Tests
